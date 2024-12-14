@@ -9,7 +9,7 @@ data "aws_availability_zones" "available" {
 module "vpc" {
  source  = "terraform-aws-modules/vpc/aws"
 
- name = "tschui-example-vpc"
+ name = "tschui-vpc"
  cidr = "10.0.0.0/16"
 
  azs             = data.aws_availability_zones.available.names
